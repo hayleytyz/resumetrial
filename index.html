@@ -3,40 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name | Resume</title>
+    <meta name="description" content="Professional resume and portfolio of Hayley Tan">
+    <title>Hayley Tan | Professional Resume</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
+    <header class="navbar" role="banner">
         <div class="container">
-            <a href="#" class="logo">YourName</a>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#achievements">Achievements</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+            <a href="#home" class="logo" aria-label="Home">Hayley Tan</a>
+            <nav class="nav-container" role="navigation" aria-label="Main navigation">
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link" data-section="home">Home</a></li>
+                    <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+                    <li><a href="#experience" class="nav-link" data-section="experience">Experience</a></li>
+                    <li><a href="#achievements" class="nav-link" data-section="achievements">Achievements</a></li>
+                    <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
         </div>
-    </nav>
+    </header>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="container">
-            <h1 class="animate-text">Hi, I'm <span class="highlight">Your Name</span></h1>
-            <p class="animate-text">Professional Title / Role</p>
-            <div class="cta-buttons">
-                <a href="#contact" class="btn btn-primary">Contact Me</a>
-                <a href="#about" class="btn btn-secondary">Learn More</a>
+            <div class="hero-content">
+                <p class="hero-greeting">Hello, I'm</p>
+                <h1 class="hero-title">Hayley Tan</h1>
+                <div class="typewriter">
+                    <span class="type-text">Web Developer</span>
+                    <span class="cursor">|</span>
+                </div>
+                <p class="hero-subtitle">Crafting beautiful, responsive websites with modern technologies</p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn btn-primary">
+                        <span>Get in Touch</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </a>
+                    <a href="#about" class="btn btn-secondary">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
             </div>
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <!-- Add your profile image here -->
+                    <div class="placeholder-image">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="shape shape-1"></div>
+                    <div class="shape shape-2"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <i class="fas fa-chevron-down"></i>
         </div>
     </section>
 
