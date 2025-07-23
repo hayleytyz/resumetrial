@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Resume</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">YourName</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1 class="animate-text">Hi, I'm <span class="highlight">Your Name</span></h1>
+            <p class="animate-text">Professional Title / Role</p>
+            <div class="cta-buttons">
+                <a href="#contact" class="btn btn-primary">Contact Me</a>
+                <a href="#about" class="btn btn-secondary">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title animate-content">About Me</h2>
+            <div class="about-content">
+                <div class="about-text animate-content">
+                    <p>I'm a passionate professional with expertise in [Your Field]. With [X] years of experience, I specialize in [Your Skills]. My journey in [Your Industry] has been driven by my curiosity and dedication to excellence.</p>
+                    <p>When I'm not working, you can find me [Personal Interest/Hobby]. I believe in continuous learning and pushing boundaries to create meaningful impact.</p>
+                </div>
+                <div class="skills animate-content">
+                    <h3>My Skills</h3>
+                    <div class="skill-tags">
+                        <span class="animate-content">HTML5</span>
+                        <span class="animate-content">CSS3</span>
+                        <span class="animate-content">JavaScript</span>
+                        <span class="animate-content">React</span>
+                        <span class="animate-content">Node.js</span>
+                        <span class="animate-content">UI/UX Design</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section bg-light">
+        <div class="container">
+            <div class="title-wrapper">
+                <h2 class="section-title animate-content">Experience & Education</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item animate-content">
+                    <div class="timeline-content">
+                        <h3>Job Title</h3>
+                        <p class="company">Company Name</p>
+                        <p class="date">Month Year - Present</p>
+                        <ul>
+                            <li>Responsibility or achievement 1</li>
+                            <li>Responsibility or achievement 2</li>
+                            <li>Responsibility or achievement 3</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item animate-content">
+                    <div class="timeline-content">
+                        <h3>Degree Name</h3>
+                        <p class="company">University Name</p>
+                        <p class="date">Year - Year</p>
+                        <p>Description of your education and achievements during this period.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="section">
+        <div class="container">
+            <div class="title-wrapper">
+                <h2 class="section-title animate-content">Achievements</h2>
+            </div>
+            <div class="achievements-grid">
+                <div class="achievement-card animate-content">
+                    <i class="fas fa-trophy"></i>
+                    <h3>Award Name</h3>
+                    <p>Organization, Year</p>
+                </div>
+                <div class="achievement-card animate-content">
+                    <i class="fas fa-certificate"></i>
+                    <h3>Certification</h3>
+                    <p>Issuing Organization, Year</p>
+                </div>
+                <div class="achievement-card animate-content">
+                    <i class="fas fa-star"></i>
+                    <h3>Recognition</h3>
+                    <p>Details of the recognition</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section bg-light">
+        <div class="container">
+            <div class="title-wrapper">
+                <h2 class="section-title animate-content">Get In Touch</h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info animate-content">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>your.email@example.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+1 (123) 456-7890</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <p>linkedin.com/in/yourprofile</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <p>github.com/yourusername</p>
+                    </div>
+                </div>
+                <form class="contact-form animate-content">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Subject">
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year"></span> Your Name. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
