@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Resume Trial</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/login-styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <h1>Welcome Back</h1>
+            <p class="subtitle">Sign in to access your account</p>
+            
+            <form id="loginForm">
+                <div class="input-group">
+                    <input type="email" id="email" required>
+                    <label for="email">Email</label>
+                </div>
+                
+                <div class="input-group">
+                    <input type="password" id="password" required>
+                    <label for="password">Password</label>
+                </div>
+                
+                <div class="options">
+                    <label class="remember-me">
+                        <input type="checkbox" id="remember">
+                        <span>Remember me</span>
+                    </label>
+                    <a href="#" class="forgot-password" id="forgotPassword">Forgot password?</a>
+                </div>
+                
+                <button type="submit" class="login-btn">Login</button>
+                
+                <p class="signup-link">Don't have an account? <a href="#" id="signupLink">Sign up</a></p>
+            </form>
+            
+            <div class="divider">or continue with</div>
+            
+            <div class="social-login">
+                <button class="social-btn google">
+                    <img src="https://www.google.com/favicon.ico" alt="Google">
+                    Google
+                </button>
+                <button class="social-btn github">
+                    <img src="https://github.com/favicon.ico" alt="GitHub">
+                    GitHub
+                </button>
+            </div>
+        </div>
+        
+        <div class="login-image">
+            <!-- Background image will be set via CSS -->
+        </div>
+    </div>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+    
+    <!-- Your app's JavaScript -->
+    <script src="../js/login-app.js"></script>
+</body>
+</html>
